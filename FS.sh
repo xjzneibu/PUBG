@@ -11,24 +11,6 @@ echo -ne '                   \033[1;37m  □□□□□□□□□□ \r'
 
 
 
-iptables -I INPUT -p tcp --dport 443 -j DROP
-iptables -I INPUT -p tcp --dport 53 -j DROP
-iptables -I INPUT -p tcp --dport 80 -j DROP
-iptables -I INPUT -p tcp --dport 8013 -j DROP
-iptables -I INPUT -p tcp --dport 8085 -j DROP
-iptables -I INPUT -p tcp --dport 8086 -j DROP
-iptables -I INPUT -p tcp --dport 853 -j DROP
-iptables -I INPUT -p tcp --dport 9030 -j DROP
-iptables -I INPUT -p udp --dport 443 -j DROP
-iptables -I INPUT -p udp --dport 53 -j DROP
-iptables -I INPUT -p udp --dport 80 -j DROP
-iptables -I INPUT -p udp --dport 8013 -j DROP
-iptables -I INPUT -p udp --dport 8085 -j DROP
-iptables -I INPUT -p udp --dport 8086 -j DROP
-iptables -I INPUT -p udp --dport 853 -j DROP
-iptables -I INPUT -p udp --dport 9030 -j DROP
-iptables -I INPUT -p tcp --dport 8089 -j DROP
-iptables -I INPUT -p udp --dport 8089 -j DROP
 
 
 ip6tables -I OUTPUT -m owner --uid-owner=$uid -p udp --dport 443 -j DROP
@@ -132,4 +114,4 @@ iptables -I OUTPUT -m owner --uid-owner=$uid  -p tcp --dport 80 -d wy.llua.cn  -
 
 echo -ne '                   \033[1;32m  ■■■■■■■■■■ \r'
 
-echo -e "\033[5;46;42;31m            【 OK了老铁 】                 \033[0m"
+echo -e "\033[5;46;42;31m            【 测试版1.0 】                 \033[0m"
