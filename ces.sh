@@ -3,7 +3,7 @@
 rm -rf /data/data/com.tencent.ig/files/ano_tmp
       
           uid=`cat /data/system/packages.list | grep 'com.tencent.ig ' | awk '{print $2}'`
-am force-stop com.tencent.ig
+#am force-stop com.tencent.ig
 iptables -F 
 iptables -X 
 iptables -Z 
@@ -11,7 +11,7 @@ iptables -Z
 iptables -F 
 iptables -X 
 iptables -Z
-am force-stop com.tencent.ig
+#am force-stop com.tencent.ig
 echo -ne '                   \033[1;37m  □□□□□□□□□□ \r'
 
 sleep 1
